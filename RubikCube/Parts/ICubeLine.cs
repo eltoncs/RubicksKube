@@ -1,14 +1,10 @@
-﻿using RubikCube.Parts.Enums;
-
-namespace RubikCube.Parts
+﻿namespace RubikCube.Parts
 {
-    public interface ICubeLine
+    public interface ICubeLine : IRotatable
     {
         CubeElement BackLine { get; set; }
         CubeElement FrontLine { get; set; }
         CubeElement MiddleLine { get; set; }
         CubeUnit[][] Value { get; set; }
-
-        void Rotate(Rotation direction);
     }
 }

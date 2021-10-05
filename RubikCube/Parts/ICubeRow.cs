@@ -1,13 +1,9 @@
-﻿using RubikCube.Parts.Enums;
-
-namespace RubikCube.Parts
+﻿namespace RubikCube.Parts
 {
-    public interface ICubeRow
+    public interface ICubeRow : IRotatable
     {
         CubeElement BackRow { get; set; }
         CubeElement FrontRow { get; set; }
         CubeElement MiddleRow { get; set; }
-
-        void Rotate(Rotation direction);
     }
 }
