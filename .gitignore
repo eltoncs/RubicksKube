@@ -1,5 +1,48 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
 
-/.vs/RubikCube/v16/TestStore/0
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+output.txt
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+
+[Ss]olutionLauncher.exe
+[Ss]olutionLauncher.pdb
+
+*.pubxml
+[Pp]ublishProfiles/
+10.Src/Applications/IdentityServer/host/identityserver4_log.txt
