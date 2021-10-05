@@ -3,13 +3,13 @@ The solution consists of two projects (Class library and unit tests)
 
 Objects Hierarchy
  - Cube
-  - CubeLine
+   - CubeLine
     - CubeElement (Set of blocks)
       - CubeUnit
         - UnitFace (front, back, left, right, top, bottom)
           - FaceSide
           - Color (System.Drawing.Color)
-  - CubeRow
+   - CubeRow
     - CubeElement (Set of blocks)
       - CubeUnit
         - UnitFace (front, back, left, right, top, bottom)
