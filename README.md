@@ -6,14 +6,14 @@ Objects Hierarchy
    - CubeLine
     - CubeElement (Set of blocks)
       - CubeUnit
-        - UnitFace (front, back, left, right, top, bottom)
-          - FaceSide
+        - UnitFace 
+          - FaceSide (front, back, left, right, top, bottom)
           - Color (System.Drawing.Color)
    - CubeRow
     - CubeElement (Set of blocks)
       - CubeUnit
-        - UnitFace (front, back, left, right, top, bottom)
-          - FaceSide
+        - UnitFace 
+          - FaceSide (front, back, left, right, top, bottom)
           - Color (System.Drawing.Color)
 
 I started with not the best approach and when I realised it, I did not have much time left to fix it.
