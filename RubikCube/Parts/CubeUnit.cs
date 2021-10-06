@@ -10,11 +10,11 @@ namespace RubikCube.Parts
     [Serializable]
     public class CubeUnit : ICubeUnit
     {
-        public List<UnitFace> Faces { get; set; }
+        public List<IUnitFace> Faces { get; set; }
 
         public CubeUnit()
         {
-            Faces = new List<UnitFace>();
+            Faces = new List<IUnitFace>();
 
             var faceFront = new UnitFace(Enums.FaceSide.Front, Color.Green);
             var faceBack = new UnitFace(Enums.FaceSide.Back, Color.Blue);
@@ -75,7 +75,7 @@ namespace RubikCube.Parts
             return;
         }
 
-        public CubeUnit Clone()
+        private ICubeUnit Clone()
         {
             using (var ms = new MemoryStream())
             {

@@ -4,13 +4,13 @@ namespace RubikCube.Parts
 {
     public class Cube : ICube
     {
-        public CubeLine TopLine { get; set; }
-        public CubeLine MiddleLine { get; set; }
-        public CubeLine BottomLine { get; set; }
+        public ICubeLine TopLine { get; set; }
+        public ICubeLine MiddleLine { get; set; }
+        public ICubeLine BottomLine { get; set; }
 
-        public CubeRow LeftRow { get; set; }
-        public CubeRow MiddleRow { get; set; }
-        public CubeRow RightRow { get; set; }
+        public ICubeRow LeftRow { get; set; }
+        public ICubeRow MiddleRow { get; set; }
+        public ICubeRow RightRow { get; set; }
 
         public Cube()
         {

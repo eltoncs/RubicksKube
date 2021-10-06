@@ -110,7 +110,7 @@ namespace RubikCubeUnitTests
         }
 
         private void AssertRotation(
-          CubeElement line,
+          ICubeElement line,
           Color colorFront,
           Color colorBack,
           Color colorLeft,

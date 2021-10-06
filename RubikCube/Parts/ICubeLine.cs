@@ -2,9 +2,9 @@
 {
     public interface ICubeLine : IRotatable
     {
-        CubeElement BackLine { get; set; }
-        CubeElement FrontLine { get; set; }
-        CubeElement MiddleLine { get; set; }
-        CubeUnit[][] Value { get; set; }
+        ICubeElement BackLine { get; set; }
+        ICubeElement FrontLine { get; set; }
+        ICubeElement MiddleLine { get; set; }
+        ICubeUnit[][] Value { get; set; }
     }
 }

@@ -6,15 +6,15 @@ namespace RubikCube.Parts
     [Serializable]
     public class CubeElement : ICubeElement
     {
-        public CubeUnit FirstBlock { get; set; }
-        public CubeUnit SecondBlock { get; set; }
-        public CubeUnit ThirdBlock { get; set; }
+        public ICubeUnit FirstBlock { get; set; }
+        public ICubeUnit SecondBlock { get; set; }
+        public ICubeUnit ThirdBlock { get; set; }
 
         public CubeElement()
         {
         }
 
-        public CubeElement(CubeUnit firstBlock, CubeUnit secondBlock, CubeUnit thirdBlock)
+        public CubeElement(ICubeUnit firstBlock, ICubeUnit secondBlock, ICubeUnit thirdBlock)
         {
             this.FirstBlock = firstBlock;
             this.SecondBlock = secondBlock;

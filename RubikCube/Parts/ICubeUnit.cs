@@ -5,9 +5,8 @@ namespace RubikCube.Parts
 {
     public interface ICubeUnit
     {
-        List<UnitFace> Faces { get; set; }
+        List<IUnitFace> Faces { get; set; }
 
-        CubeUnit Clone();
         void RotateFront(Rotation orientation);
         void RotateSide(Rotation orientation);
     }

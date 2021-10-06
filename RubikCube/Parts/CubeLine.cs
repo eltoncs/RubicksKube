@@ -6,11 +6,11 @@ namespace RubikCube.Parts
     [Serializable]
     public class CubeLine : ICubeLine
     {
-        public CubeUnit[][] Value { get; set; }
+        public ICubeUnit[][] Value { get; set; }
 
-        public CubeElement FrontLine { get; set; }
-        public CubeElement MiddleLine { get; set; }
-        public CubeElement BackLine { get; set; }
+        public ICubeElement FrontLine { get; set; }
+        public ICubeElement MiddleLine { get; set; }
+        public ICubeElement BackLine { get; set; }
 
         public CubeLine()
         {
@@ -40,7 +40,7 @@ namespace RubikCube.Parts
             }
         }
 
-        private void RotateAllBlocksInLine(CubeLine line, Rotation direction)
+        private void RotateAllBlocksInLine(ICubeLine line, Rotation direction)
         {
             for (var x = 0; x < line.Value.Length; x++)
             {

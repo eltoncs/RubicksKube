@@ -2,8 +2,8 @@
 {
     public interface ICubeRow : IRotatable
     {
-        CubeElement BackRow { get; set; }
-        CubeElement FrontRow { get; set; }
-        CubeElement MiddleRow { get; set; }
+        ICubeElement BackRow { get; set; }
+        ICubeElement FrontRow { get; set; }
+        ICubeElement MiddleRow { get; set; }
     }
 }
